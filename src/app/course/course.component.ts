@@ -23,9 +23,8 @@ export class CourseComponent implements OnInit {
     return this.title;
   }
 
-  onButtonClick($event) {
-    console.log($event);
-    this.buttonText = this.buttonText == 'ON' ? 'OFF' : 'ON';
+  onKeyUp() {
+    console.log('ENTER was pressed');
   }
 
 }

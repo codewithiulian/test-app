@@ -11,4 +11,6 @@
 <!-- Style binding -->
 <!-- <button (click)="onButtonClick()" class="btn btn-sm btn-primary" [style.backgroundColor]="isActive ? 'blue' : 'white'">Save</button> -->
 <!-- Event binding -->
-<button (click)="onButtonClick($event)" class="btn btn-sm btn-primary">{{ buttonText }}</button>
+<!-- <button (click)="onButtonClick($event)" class="btn btn-sm btn-primary">{{ buttonText }}</button> -->
+<!-- Event filtering -->
+<input (keyup.enter)="onKeyUp()">
