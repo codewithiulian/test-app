@@ -9,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class CourseComponent implements OnInit {
   title = "List of courses";
   courses;
+  isActive = true;
 
   constructor(service: CourseService) {
     this.courses = service.getCourses();
@@ -19,6 +20,10 @@ export class CourseComponent implements OnInit {
 
   getTitle() {
     return this.title;
+  }
+
+  onButtonClick() {
+    this.isActive = !this.isActive;
   }
 
 }
