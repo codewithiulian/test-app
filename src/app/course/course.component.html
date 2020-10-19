@@ -13,4 +13,5 @@
 <!-- Event binding -->
 <!-- <button (click)="onButtonClick($event)" class="btn btn-sm btn-primary">{{ buttonText }}</button> -->
 <!-- Event filtering -->
-<input (keyup.enter)="onKeyUp()">
+<input (keyup)="onKeyUp($event)">
+<p>{{ textContent }}</p>

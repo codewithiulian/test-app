@@ -11,6 +11,7 @@ export class CourseComponent implements OnInit {
   courses;
   isActive = true;
   buttonText = 'ON';
+  textContent;
 
   constructor(service: CourseService) {
     this.courses = service.getCourses();
@@ -23,8 +24,8 @@ export class CourseComponent implements OnInit {
     return this.title;
   }
 
-  onKeyUp() {
-    console.log('ENTER was pressed');
+  onKeyUp($event) {
+    this.textContent = $event.target.value;
   }
 
 }
