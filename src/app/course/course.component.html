@@ -12,6 +12,6 @@
 <!-- <button (click)="onButtonClick()" class="btn btn-sm btn-primary" [style.backgroundColor]="isActive ? 'blue' : 'white'">Save</button> -->
 <!-- Event binding -->
 <!-- <button (click)="onButtonClick($event)" class="btn btn-sm btn-primary">{{ buttonText }}</button> -->
-<!-- Event filtering -->
-<input (keyup)="onKeyUp($event)">
-<p>{{ textContent }}</p>
+<!-- Template varibles -->
+<input #inputText (keyup)="onKeyUp(inputText.value)">
+<p>{{ inputTextValue }}</p>
