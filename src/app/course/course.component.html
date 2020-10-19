@@ -2,4 +2,4 @@
 <ul>
   <li *ngFor="let course of courses">{{ course }}</li>
 </ul>
-<button (click)="onButtonClick()" class="btn btn-sm btn-primary" [class.active]="isActive">Save</button>
+<button (click)="onButtonClick()" class="btn btn-sm btn-primary" [style.backgroundColor]="isActive ? 'blue' : 'white'">Save</button>
