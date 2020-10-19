@@ -23,7 +23,8 @@ export class CourseComponent implements OnInit {
     return this.title;
   }
 
-  onButtonClick() {
+  onButtonClick($event) {
+
     this.buttonText = this.buttonText == 'ON' ? 'OFF' : 'ON';
   }
 
