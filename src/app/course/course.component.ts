@@ -7,13 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./course.component.scss']
 })
 export class CourseComponent implements OnInit {
-  course = {
-    title: "My very first course",
-    rating: 4.9745,
-    students: 5280,
-    price: 49.99,
-    releaseDate: new Date(2020, 10, 20)
-  }
+  text = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam congue ligula at ex finibus interdum. Nam sed diam in nisl consequat congue. Curabitur vulputate, elit ut venenatis dignissim, ante metus faucibus justo, in luctus massa est vel nisi. Nulla urna odio, convallis sed faucibus ac, dictum quis mauris. Quisque condimentum lectus quis orci iaculis tincidunt. Sed ac dui malesuada, varius neque non, porttitor quam. Maecenas volutpat nibh in turpis vestibulum, id fringilla metus cursus. Aliquam in metus mollis, fermentum ex sed, malesuada felis. Duis vitae tortor id libero posuere pellentesque vitae non ligula. `;
 
   constructor(service: CourseService) {
   }
