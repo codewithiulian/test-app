@@ -9,4 +9,8 @@ export class AppComponent {
   post = {
     isFavorite: true,
   }
+
+  isFavoriteOnClick(){
+    console.log('IsFavorite has been clicked!');
+  }
 }
