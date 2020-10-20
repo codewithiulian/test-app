@@ -10,13 +10,15 @@ import { AppComponent } from './app.component';
 import { CourseComponent } from './course/course.component';
 import { AuthorComponent } from './author/author.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ButtonComponent } from './button/button.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CourseComponent,
     AuthorComponent,
-    SummaryPipe
+    SummaryPipe,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,
