@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TextboxComponent } from './textbox.component';
+import { FavoriteComponent } from './favorite.component';
 
-describe('TextboxComponent', () => {
-  let component: TextboxComponent;
-  let fixture: ComponentFixture<TextboxComponent>;
+describe('FavoriteComponent', () => {
+  let component: FavoriteComponent;
+  let fixture: ComponentFixture<FavoriteComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TextboxComponent ]
+      declarations: [ FavoriteComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TextboxComponent);
+    fixture = TestBed.createComponent(FavoriteComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
