@@ -17,15 +17,15 @@ export class FavoriteComponent implements OnInit {
     this.buildIcon();
   }
 
-  buildIcon(){
+  buildIcon() {
     this.icon = this.isFavorite ? 'star-fill' : 'star';
     this.iconUrl = `/assets/icons/${this.icon}.svg`
   }
 
-  onClick(){
+  onClick() {
     this.isFavorite = !this.isFavorite;
     this.buildIcon();
-    this.change.emit();
+    this.change.emit({ newValue: this.isFavorite });
   }
 
 }
