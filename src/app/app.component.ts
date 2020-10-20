@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FavoriteChangedEventArgs } from './models/FavoriteChangedEventArgs';
+import { TwitterModel } from './models/TwitterModel';
 
 @Component({
   selector: 'app-root',
@@ -7,11 +7,13 @@ import { FavoriteChangedEventArgs } from './models/FavoriteChangedEventArgs';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  post = {
-    isFavorite: true,
+  twitter: TwitterModel = {
+    likesCount: 0,
+    isActive: false
   }
 
-  isFavoriteOnClick(eventArgs: FavoriteChangedEventArgs) {
-    console.log('IsFavorite changed: ', eventArgs);
+  onChanged(twitter: TwitterModel) {
+    this.twitter = twitter;
+    console.log(this.twitter);
   }
 }

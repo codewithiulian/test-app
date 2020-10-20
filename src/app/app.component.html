@@ -1,7 +1,1 @@
-<app-panel>
-  <ng-container class="header">Header</ng-container>
-  <div class="body">
-    <h1>Body</h1>
-    <p>This is the body of my component</p>
-  </div>
-</app-panel>
+<like (change)="onChanged($event)" [isActive]="twitter.isActive" [likesCount]="twitter.likesCount"></like>
