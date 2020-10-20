@@ -16,5 +16,8 @@
 <!-- <input #inputText (keyup)="onKeyUp(inputText.value)">
 <p>{{ inputTextValue }}</p> -->
 <!-- Two way binding v1 -->
-<input [value]="email" (keyup)="email = $event.target.value; onKeyUp()">
+<!-- <input [value]="email" (keyup)="email = $event.target.value; onKeyUp()">
+<p>{{ email }}</p> -->
+<!-- Two way binding v2 -->
+<input [(ngModel)]="email">
 <p>{{ email }}</p>

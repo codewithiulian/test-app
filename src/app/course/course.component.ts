@@ -25,8 +25,4 @@ export class CourseComponent implements OnInit {
     return this.title;
   }
 
-  onKeyUp() {
-    console.log(this.email);
-  }
-
 }
