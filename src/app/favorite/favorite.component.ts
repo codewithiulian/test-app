@@ -9,7 +9,7 @@ export class FavoriteComponent implements OnInit {
   icon = 'star'
   iconUrl: string;
   @Input() isFavorite: boolean;
-  @Output() change = new EventEmitter();
+  @Output('change') click = new EventEmitter();
 
   constructor() { }
 
@@ -25,7 +25,7 @@ export class FavoriteComponent implements OnInit {
   onClick() {
     this.isFavorite = !this.isFavorite;
     this.buildIcon();
-    this.change.emit({ newValue: this.isFavorite });
+    this.click.emit({ newValue: this.isFavorite });
   }
 
 }
