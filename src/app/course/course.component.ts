@@ -12,6 +12,7 @@ export class CourseComponent implements OnInit {
   isActive = true;
   buttonText = 'ON';
   inputTextValue;
+  email = "me@example.com";
 
   constructor(service: CourseService) {
     this.courses = service.getCourses();
@@ -24,8 +25,8 @@ export class CourseComponent implements OnInit {
     return this.title;
   }
 
-  onKeyUp(inputText) {
-    this.inputTextValue = inputText;
+  onKeyUp() {
+    console.log(this.email);
   }
 
 }

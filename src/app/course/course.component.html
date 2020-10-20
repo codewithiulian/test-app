@@ -13,5 +13,8 @@
 <!-- Event binding -->
 <!-- <button (click)="onButtonClick($event)" class="btn btn-sm btn-primary">{{ buttonText }}</button> -->
 <!-- Template varibles -->
-<input #inputText (keyup)="onKeyUp(inputText.value)">
-<p>{{ inputTextValue }}</p>
+<!-- <input #inputText (keyup)="onKeyUp(inputText.value)">
+<p>{{ inputTextValue }}</p> -->
+<!-- Two way binding v1 -->
+<input [value]="email" (keyup)="email = $event.target.value; onKeyUp()">
+<p>{{ email }}</p>
