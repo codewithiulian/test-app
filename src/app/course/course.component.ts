@@ -7,22 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./course.component.scss']
 })
 export class CourseComponent implements OnInit {
-  title = "List of courses";
-  courses;
-  isActive = true;
-  buttonText = 'ON';
-  inputTextValue;
-  email = "me@example.com";
+  course = {
+    title: "My very first course",
+    rating: 4.9745,
+    students: 5280,
+    price: 49.99,
+    releaseDate: new Date(2020, 10, 20)
+  }
 
   constructor(service: CourseService) {
-    this.courses = service.getCourses();
   }
 
   ngOnInit(): void {
-  }
-
-  getTitle() {
-    return this.title;
   }
 
 }

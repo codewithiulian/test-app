@@ -1,23 +1,5 @@
-<h2>Title: {{ getTitle() }}</h2>
-<ul>
-  <li *ngFor="let course of courses">{{ course }}</li>
-</ul>
-<!-- Property binding -->
-<!-- <img [src]="imageUrl"> -->
-<!-- Attribute binding -->
-<!-- <table><tr><td [attr.colspan]=2></td></tr></table> -->
-<!-- Class binding -->
-<!-- <button (click)="onButtonClick()" class="btn btn-sm btn-primary" [style.active]="isActive">Save</button> --> 
-<!-- Style binding -->
-<!-- <button (click)="onButtonClick()" class="btn btn-sm btn-primary" [style.backgroundColor]="isActive ? 'blue' : 'white'">Save</button> -->
-<!-- Event binding -->
-<!-- <button (click)="onButtonClick($event)" class="btn btn-sm btn-primary">{{ buttonText }}</button> -->
-<!-- Template varibles -->
-<!-- <input #inputText (keyup)="onKeyUp(inputText.value)">
-<p>{{ inputTextValue }}</p> -->
-<!-- Two way binding v1 -->
-<!-- <input [value]="email" (keyup)="email = $event.target.value; onKeyUp()">
-<p>{{ email }}</p> -->
-<!-- Two way binding v2 -->
-<input [(ngModel)]="email">
-<p>{{ email }}</p>
+{{ course.title | uppercase | lowercase }} <br />
+{{ course.students | number }} <br />
+{{ course.rating | number:'1.2-2' }} <br />
+{{ course.price | currency:'AUD':true:'2.2-2' }} <br />
+{{ course.releaseDate | date:'shortDate' }} <br />
