@@ -7,13 +7,5 @@ import { TwitterModel } from './models/TwitterModel';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  twitter: TwitterModel = {
-    likesCount: 0,
-    isActive: false
-  }
-
-  onChanged(twitter: TwitterModel) {
-    this.twitter = twitter;
-    console.log(this.twitter);
-  }
+  courses = [1, 2];
 }
