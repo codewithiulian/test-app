@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { TwitterModel } from './models/TwitterModel';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +6,10 @@ import { TwitterModel } from './models/TwitterModel';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  canSave = true;
+  task = {
+    title: 'Review applications',
+    assignee: {
+      name: 'John Smith'
+    }
+  }
 }
