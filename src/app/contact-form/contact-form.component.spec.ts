@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ZippyComponent } from './zippy.component';
+import { ContactFormComponent } from './contact-form.component';
 
-describe('ZippyComponent', () => {
-  let component: ZippyComponent;
-  let fixture: ComponentFixture<ZippyComponent>;
+describe('ContactFormComponent', () => {
+  let component: ContactFormComponent;
+  let fixture: ComponentFixture<ContactFormComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ZippyComponent ]
+      declarations: [ ContactFormComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ZippyComponent);
+    fixture = TestBed.createComponent(ContactFormComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
