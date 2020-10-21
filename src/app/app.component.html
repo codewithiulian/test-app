@@ -1,5 +1,7 @@
+<button class="btn btn-sm btn-success" (click)="onAdd()">Add</button>
 <ul>
-  <li *ngFor="let course of courses; index as i; even as even">
-    {{ i }} - {{ course.name }} is <span *ngIf="even">Even</span><span *ngIf="!even">Odd</span>
+  <li class="mt-1" *ngFor="let course of courses; even as even">
+    {{ course.id }} - {{ course.name }} is <span *ngIf="even">Even</span><span *ngIf="!even">Odd</span>
+    <button class="btn btn-sm btn-danger" (click)="onRemove(course)">Remove</button>
   </li>
 </ul>
