@@ -1,8 +1,5 @@
-<ul class="nav nav-tabs">
-  <li class="nav-items" [class.active]="selected == 'map'" (click)="selected = 'map'"><a href="#" class="nav-link">Map View</a></li>
-  <li class="nav-items" [class.active]="selected == 'list'" (click)="selected = 'list'"><a href="#" class="nav-link">List View</a></li>
+<ul>
+  <li *ngFor="let course of courses; index as i; even as even">
+    {{ i }} - {{ course.name }} is <span *ngIf="even">Even</span><span *ngIf="!even">Odd</span>
+  </li>
 </ul>
-<div [ngSwitch]="selected">
-  <div *ngSwitchCase="'map'"><h3>Map View Content</h3></div>
-  <div *ngSwitchCase="'list'"><h3>List View Content</h3></div>
-</div>
