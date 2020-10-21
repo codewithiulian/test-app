@@ -8,4 +8,5 @@ import { TwitterModel } from './models/TwitterModel';
 })
 export class AppComponent {
   courses = [1, 2];
+  selected = "map";
 }

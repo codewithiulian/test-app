@@ -1,7 +1,8 @@
-<div *ngIf="courses.length > 0; then courseList else noCourses"></div>
-<ng-template #courseList>
-  <h3>List of courses</h3>
-</ng-template>
-<ng-template #noCourses>
-  <h3>No Courses</h3>
-</ng-template>
+<ul class="nav nav-tabs">
+  <li class="nav-items" [class.active]="selected == 'map'" (click)="selected = 'map'"><a href="#" class="nav-link">Map View</a></li>
+  <li class="nav-items" [class.active]="selected == 'list'" (click)="selected = 'list'"><a href="#" class="nav-link">List View</a></li>
+</ul>
+<div [ngSwitch]="selected">
+  <div *ngSwitchCase="'map'"><h3>Map View Content</h3></div>
+  <div *ngSwitchCase="'list'"><h3>List View Content</h3></div>
+</div>
